@@ -54,29 +54,33 @@ Security Misconfigurations
 
 Input validation weaknesses
 
-🏗️ Project Structure
+## 🏗️ Project Structure
+
+```text
 WebGuardX-AppSec-Automation/
 ├── engine/
-│   └── appsec_engine.py        # Core scanning engine
+│   ├── __init__.py
+│   └── appsec_engine.py
 ├── modules/
-│   ├── sqli_validator.py       # SQL Injection detection
-│   ├── xss_validator.py        # XSS detection
-│   ├── auth_validator.py       # Authentication checks
-│   └── misconfig_validator.py  # Security misconfigurations
+│   ├── sqli_validator.py
+│   ├── xss_validator.py
+│   ├── auth_validator.py
+│   └── misconfig_validator.py
 ├── reporting/
-│   └── report_builder.py       # Report generation logic
+│   └── report_builder.py
 ├── config/
-│   ├── appsec_config.yaml      # Scan configuration
-│   └── payloads.yaml           # Attack payloads
+│   ├── appsec_config.yaml
+│   └── payloads.yaml
 ├── docs/
-│   └── sample-findings.md      # Sample vulnerability output
+│   └── sample-findings.md
 ├── utils/
-│   └── logger.py               # Logging utilities
-├── appsec_runner.py            # Entry point
+│   └── logger.py
+├── appsec_runner.py
 ├── README.md
 ├── CHANGELOG.md
 ├── LICENSE
 └── requirements.txt
+
 
 🚀 How to Run the Project
 
