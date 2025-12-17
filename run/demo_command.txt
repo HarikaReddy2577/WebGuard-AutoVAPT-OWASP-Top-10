@@ -1,0 +1,14 @@
+# WebGuardX AppSec Automation – Demo Command
+
+# Step 1: Install dependencies
+pip install -r requirements.txt
+
+# Step 2: Run the AppSec scanner
+python appsec_runner.py
+
+# Step 3: Example target (authorized test application)
+http://testphp.vulnweb.com
+
+# Output:
+# A security report will be generated at:
+# reporting/appsec_report.txt
