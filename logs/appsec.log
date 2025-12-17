@@ -1,0 +1,21 @@
+[2025-01-12 10:15:03] INFO  WebGuardX AppSec Automation started
+[2025-01-12 10:15:04] INFO  Target URL set to http://testphp.vulnweb.com
+
+[2025-01-12 10:15:05] INFO  Initializing SQL Injection validator
+[2025-01-12 10:15:06] INFO  SQL Injection test executed
+[2025-01-12 10:15:06] WARN  Possible SQL Injection detected at /?id=
+
+[2025-01-12 10:15:07] INFO  Initializing XSS validator
+[2025-01-12 10:15:08] INFO  XSS payload injected
+[2025-01-12 10:15:08] WARN  Reflected XSS detected at /?q=
+
+[2025-01-12 10:15:09] INFO  Initializing Authentication validator
+[2025-01-12 10:15:09] INFO  Authentication checks completed
+
+[2025-01-12 10:15:10] INFO  Initializing Security Misconfiguration validator
+[2025-01-12 10:15:10] WARN  Exposed admin endpoint found at /admin
+
+[2025-01-12 10:15:11] INFO  Generating security report
+[2025-01-12 10:15:11] INFO  Report saved to reporting/appsec_report.txt
+
+[2025-01-12 10:15:12] INFO  WebGuardX AppSec Automation completed successfully
