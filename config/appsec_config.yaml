@@ -1,0 +1,18 @@
+The config folder stores external configuration files instead of hard-coding values inside Python code.
+
+In real AppSec tools, configuration is kept separate to:
+Change scan behavior without editing code
+Manage payloads centrally
+Support different environments (dev / test / prod)
+
+# Application Security Scan Configuration
+
+scan:
+  timeout: 5
+  user_agent: WebGuardX-AppSec-Scanner
+  follow_redirects: true
+
+risk_levels:
+  high: High
+  medium: Medium
+  low: Low
