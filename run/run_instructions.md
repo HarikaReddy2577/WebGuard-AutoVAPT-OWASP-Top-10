@@ -15,5 +15,18 @@ This document explains how to execute the WebGuardX AppSec Automation Framework.
 
 Install required dependencies:
 
-```bash
+
 pip install -r requirements.txt
+Execution
+Run the scanner using:
+python appsec_runner.py
+Enter the target URL when prompted.
+
+Example:
+
+arduino
+http://testphp.vulnweb.com
+
+Output
+After execution, the security report is generated at:
+reporting/appsec_report.txt
