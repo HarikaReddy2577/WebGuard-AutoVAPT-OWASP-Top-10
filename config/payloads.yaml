@@ -1,0 +1,10 @@
+# Payloads used for vulnerability validation
+
+sql_injection:
+  - "' OR '1'='1"
+  - "' OR 1=1--"
+  - "' UNION SELECT NULL--"
+
+xss:
+  - "<script>alert('XSS')</script>"
+  - "<img src=x onerror=alert(1)>"
