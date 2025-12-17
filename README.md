@@ -1,119 +1,82 @@
-🛡️ WEBGUARDX – APPSEC AUTOMATION FRAMEWORK
+# 🛡️ WebGuardX – AppSec Automation Framework
+### Automated Web Application Security Testing (OWASP Top 10)
 
-Automated Web Application Security Testing (OWASP Top 10)
+**WebGuardX-AppSec-Automation** is a Python-based **Application Security (AppSec) automation tool** designed to detect common **OWASP Top 10 vulnerabilities** using a modular and real-world architecture.
 
-A modular, Python-based Application Security (AppSec) automation framework designed to detect common OWASP Top 10 vulnerabilities using real-world scanning logic and clean software architecture.
+---
 
-📌 Overview
+## 📌 Overview
+WebGuardX simulates how real AppSec and VAPT tools operate by separating:
+- Scan orchestration
+- Vulnerability validation
+- Reporting
+- Configuration
+- Execution logging
 
-WebGuardX-AppSec-Automation is an advanced web vulnerability assessment framework built to simulate real-world AppSec and VAPT workflows.
-It automates the detection of common web vulnerabilities such as SQL Injection, XSS, Authentication flaws, and Security Misconfigurations, and generates structured security reports.
+This project demonstrates **hands-on AppSec skills combined with software engineering best practices**.
 
-This project reflects industry-level AppSec practices and is designed for SOC Analyst, VAPT Engineer, and Application Security roles.
+---
 
-🎯 Why I Built This Project
+## 🎯 Why I Built This
+I built WebGuardX to move beyond theory and understand **how vulnerabilities are validated programmatically** and how **real AppSec tools are structured** in security teams.
 
-I built WebGuardX to bridge the gap between theoretical OWASP knowledge and practical security testing.
-Instead of using only tools, this project helped me:
-Understand how vulnerabilities are detected programmatically
-Learn how scanners validate findings
-Design a scalable security testing framework
-Apply secure coding and software engineering principles in cybersecurity
-This project demonstrates how modern AppSec automation tools are structured in real organizations.
+---
 
-🧠 Learning Outcomes
+## 🧠 Learning Outcomes
+- OWASP Top 10 vulnerability analysis  
+- Modular Python application design  
+- Payload-based validation logic  
+- Security report generation  
+- Logging and execution tracking  
+- Ethical security testing practices  
 
-Through this project, I gained hands-on experience in:
-OWASP Top 10 vulnerability logic
-Web request analysis using Python
-Payload-based attack validation
-Modular and extensible software design
-Secure logging and reporting
-Configuration-driven security testing
-Ethical and responsible vulnerability assessment
+---
 
-🧩 Key Features
+## 🔍 Vulnerabilities Covered
+- SQL Injection (SQLi)
+- Cross-Site Scripting (XSS)
+- Broken Authentication
+- Security Misconfiguration
 
-✔ Automated Web Application Scanning
-✔ OWASP Top 10 focused detection
-✔ Modular attack validation engine
-✔ YAML-based configuration & payload management
-✔ Structured reporting (TXT & Markdown)
-✔ Clean separation of scanning logic
-✔ Recruiter-friendly, production-style structure
+---
 
-🔍 Vulnerabilities Covered
+## ✨ Key Features
+✔ Modular vulnerability validators  
+✔ Engine-based scan orchestration  
+✔ Config-driven payload management  
+✔ Structured security reports  
+✔ Execution logs & proof screenshots  
 
-SQL Injection (SQLi)
-
-Cross-Site Scripting (XSS)
-
-Broken Authentication
-
-Security Misconfigurations
-
-Input validation weaknesses
+---
 
 ## 🏗️ Project Structure
-
 ```text
 WebGuardX-AppSec-Automation/
-├── engine/
-│   ├── __init__.py
-│   └── appsec_engine.py
-├── modules/
-│   ├── sqli_validator.py
-│   ├── xss_validator.py
-│   ├── auth_validator.py
-│   └── misconfig_validator.py
-├── reporting/
-│   └── report_builder.py
-├── config/
-│   ├── appsec_config.yaml
-│   └── payloads.yaml
-├── docs/
-│   └── sample-findings.md
-├── utils/
-│   └── logger.py
+├── engine/        # Core scan engine
+├── modules/       # OWASP validators
+├── reporting/     # Report generation
+├── config/        # Configs & payloads
+├── docs/          # Docs & screenshots
+├── utils/         # Helper utilities
+├── run/           # Execution helpers
+├── logs/          # Runtime logs
 ├── appsec_runner.py
-├── README.md
-├── CHANGELOG.md
-├── LICENSE
 └── requirements.txt
 
-
-🚀 How to Run the Project
-
-1️⃣ Install Dependencies
+🚀 How to Run
 pip install -r requirements.txt
-
-2️⃣ Run the Scanner
 python appsec_runner.py
 
-3️⃣ Provide Target URL
 
-Example:
+Example target (authorized test app):
+
 http://testphp.vulnweb.com
 
-📊 Output & Reports
-Scan results are automatically generated in the reports/ directory:
-scan_report.txt
-scan_report.md
-Each report includes:
-Detected vulnerabilities
-Affected endpoints
-Risk severity
-Scan summary
+🚀 How to Run
+pip install -r requirements.txt
+python appsec_runner.py
 
-🛡️ Ethical Usage Notice
 
-This project is intended strictly for educational and ethical testing purposes.
-Only scan applications you own or have explicit permission to test.
+Example target (authorized test app):
 
-🔧 Technologies Used
-
-Python
-Requests
-YAML
-OWASP Top 10 methodology
-Secure coding practices
+http://testphp.vulnweb.com
